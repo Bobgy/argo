@@ -1,14 +1,7 @@
 {
-  "consumes": [
-    "application/json"
-  ],
-  "produces": [
-    "application/json"
-  ],
-  "schemes": [
-    "http",
-    "https"
-  ],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "schemes": ["http", "https"],
   "swagger": "2.0",
   "info": {
     "description": "You can get examples of requests and responses by using the CLI with `--gloglevel=9`, e.g. `argo list --gloglevel=9`",
@@ -18,9 +11,7 @@
   "paths": {
     "/api/v1/archived-workflows": {
       "get": {
-        "tags": [
-          "ArchivedWorkflowService"
-        ],
+        "tags": ["ArchivedWorkflowService"],
         "operationId": "ArchivedWorkflowService_ListArchivedWorkflows",
         "parameters": [
           {
@@ -98,9 +89,7 @@
     },
     "/api/v1/archived-workflows/{uid}": {
       "get": {
-        "tags": [
-          "ArchivedWorkflowService"
-        ],
+        "tags": ["ArchivedWorkflowService"],
         "operationId": "ArchivedWorkflowService_GetArchivedWorkflow",
         "parameters": [
           {
@@ -126,9 +115,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "ArchivedWorkflowService"
-        ],
+        "tags": ["ArchivedWorkflowService"],
         "operationId": "ArchivedWorkflowService_DeleteArchivedWorkflow",
         "parameters": [
           {
@@ -156,9 +143,7 @@
     },
     "/api/v1/cluster-workflow-templates": {
       "get": {
-        "tags": [
-          "ClusterWorkflowTemplateService"
-        ],
+        "tags": ["ClusterWorkflowTemplateService"],
         "operationId": "ClusterWorkflowTemplateService_ListClusterWorkflowTemplates",
         "parameters": [
           {
@@ -234,9 +219,7 @@
         }
       },
       "post": {
-        "tags": [
-          "ClusterWorkflowTemplateService"
-        ],
+        "tags": ["ClusterWorkflowTemplateService"],
         "operationId": "ClusterWorkflowTemplateService_CreateClusterWorkflowTemplate",
         "parameters": [
           {
@@ -266,9 +249,7 @@
     },
     "/api/v1/cluster-workflow-templates/lint": {
       "post": {
-        "tags": [
-          "ClusterWorkflowTemplateService"
-        ],
+        "tags": ["ClusterWorkflowTemplateService"],
         "operationId": "ClusterWorkflowTemplateService_LintClusterWorkflowTemplate",
         "parameters": [
           {
@@ -298,9 +279,7 @@
     },
     "/api/v1/cluster-workflow-templates/{name}": {
       "get": {
-        "tags": [
-          "ClusterWorkflowTemplateService"
-        ],
+        "tags": ["ClusterWorkflowTemplateService"],
         "operationId": "ClusterWorkflowTemplateService_GetClusterWorkflowTemplate",
         "parameters": [
           {
@@ -332,9 +311,7 @@
         }
       },
       "put": {
-        "tags": [
-          "ClusterWorkflowTemplateService"
-        ],
+        "tags": ["ClusterWorkflowTemplateService"],
         "operationId": "ClusterWorkflowTemplateService_UpdateClusterWorkflowTemplate",
         "parameters": [
           {
@@ -369,9 +346,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "ClusterWorkflowTemplateService"
-        ],
+        "tags": ["ClusterWorkflowTemplateService"],
         "operationId": "ClusterWorkflowTemplateService_DeleteClusterWorkflowTemplate",
         "parameters": [
           {
@@ -440,9 +415,7 @@
     },
     "/api/v1/cron-workflows/{namespace}": {
       "get": {
-        "tags": [
-          "CronWorkflowService"
-        ],
+        "tags": ["CronWorkflowService"],
         "operationId": "CronWorkflowService_ListCronWorkflows",
         "parameters": [
           {
@@ -524,9 +497,7 @@
         }
       },
       "post": {
-        "tags": [
-          "CronWorkflowService"
-        ],
+        "tags": ["CronWorkflowService"],
         "operationId": "CronWorkflowService_CreateCronWorkflow",
         "parameters": [
           {
@@ -562,9 +533,7 @@
     },
     "/api/v1/cron-workflows/{namespace}/lint": {
       "post": {
-        "tags": [
-          "CronWorkflowService"
-        ],
+        "tags": ["CronWorkflowService"],
         "operationId": "CronWorkflowService_LintCronWorkflow",
         "parameters": [
           {
@@ -600,9 +569,7 @@
     },
     "/api/v1/cron-workflows/{namespace}/{name}": {
       "get": {
-        "tags": [
-          "CronWorkflowService"
-        ],
+        "tags": ["CronWorkflowService"],
         "operationId": "CronWorkflowService_GetCronWorkflow",
         "parameters": [
           {
@@ -640,9 +607,7 @@
         }
       },
       "put": {
-        "tags": [
-          "CronWorkflowService"
-        ],
+        "tags": ["CronWorkflowService"],
         "operationId": "CronWorkflowService_UpdateCronWorkflow",
         "parameters": [
           {
@@ -683,9 +648,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "CronWorkflowService"
-        ],
+        "tags": ["CronWorkflowService"],
         "operationId": "CronWorkflowService_DeleteCronWorkflow",
         "parameters": [
           {
@@ -760,9 +723,7 @@
     },
     "/api/v1/cron-workflows/{namespace}/{name}/resume": {
       "put": {
-        "tags": [
-          "CronWorkflowService"
-        ],
+        "tags": ["CronWorkflowService"],
         "operationId": "CronWorkflowService_ResumeCronWorkflow",
         "parameters": [
           {
@@ -804,9 +765,7 @@
     },
     "/api/v1/cron-workflows/{namespace}/{name}/suspend": {
       "put": {
-        "tags": [
-          "CronWorkflowService"
-        ],
+        "tags": ["CronWorkflowService"],
         "operationId": "CronWorkflowService_SuspendCronWorkflow",
         "parameters": [
           {
@@ -848,9 +807,7 @@
     },
     "/api/v1/event-sources/{namespace}": {
       "get": {
-        "tags": [
-          "EventSourceService"
-        ],
+        "tags": ["EventSourceService"],
         "operationId": "EventSourceService_ListEventSources",
         "parameters": [
           {
@@ -932,9 +889,7 @@
         }
       },
       "post": {
-        "tags": [
-          "EventSourceService"
-        ],
+        "tags": ["EventSourceService"],
         "operationId": "EventSourceService_CreateEventSource",
         "parameters": [
           {
@@ -970,9 +925,7 @@
     },
     "/api/v1/event-sources/{namespace}/{name}": {
       "get": {
-        "tags": [
-          "EventSourceService"
-        ],
+        "tags": ["EventSourceService"],
         "operationId": "EventSourceService_GetEventSource",
         "parameters": [
           {
@@ -1004,9 +957,7 @@
         }
       },
       "put": {
-        "tags": [
-          "EventSourceService"
-        ],
+        "tags": ["EventSourceService"],
         "operationId": "EventSourceService_UpdateEventSource",
         "parameters": [
           {
@@ -1046,9 +997,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "EventSourceService"
-        ],
+        "tags": ["EventSourceService"],
         "operationId": "EventSourceService_DeleteEventSource",
         "parameters": [
           {
@@ -1123,9 +1072,7 @@
     },
     "/api/v1/events/{namespace}/{discriminator}": {
       "post": {
-        "tags": [
-          "EventService"
-        ],
+        "tags": ["EventService"],
         "operationId": "EventService_ReceiveEvent",
         "parameters": [
           {
@@ -1170,9 +1117,7 @@
     },
     "/api/v1/info": {
       "get": {
-        "tags": [
-          "InfoService"
-        ],
+        "tags": ["InfoService"],
         "operationId": "InfoService_GetInfo",
         "responses": {
           "200": {
@@ -1192,9 +1137,7 @@
     },
     "/api/v1/sensors/{namespace}": {
       "get": {
-        "tags": [
-          "SensorService"
-        ],
+        "tags": ["SensorService"],
         "operationId": "SensorService_ListSensors",
         "parameters": [
           {
@@ -1276,9 +1219,7 @@
         }
       },
       "post": {
-        "tags": [
-          "SensorService"
-        ],
+        "tags": ["SensorService"],
         "operationId": "SensorService_CreateSensor",
         "parameters": [
           {
@@ -1314,9 +1255,7 @@
     },
     "/api/v1/sensors/{namespace}/{name}": {
       "get": {
-        "tags": [
-          "SensorService"
-        ],
+        "tags": ["SensorService"],
         "operationId": "SensorService_GetSensor",
         "parameters": [
           {
@@ -1354,9 +1293,7 @@
         }
       },
       "put": {
-        "tags": [
-          "SensorService"
-        ],
+        "tags": ["SensorService"],
         "operationId": "SensorService_UpdateSensor",
         "parameters": [
           {
@@ -1396,9 +1333,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "SensorService"
-        ],
+        "tags": ["SensorService"],
         "operationId": "SensorService_DeleteSensor",
         "parameters": [
           {
@@ -1473,9 +1408,7 @@
     },
     "/api/v1/stream/event-sources/{namespace}": {
       "get": {
-        "tags": [
-          "EventSourceService"
-        ],
+        "tags": ["EventSourceService"],
         "operationId": "EventSourceService_WatchEventSources",
         "parameters": [
           {
@@ -1568,9 +1501,7 @@
     },
     "/api/v1/stream/event-sources/{namespace}/logs": {
       "get": {
-        "tags": [
-          "EventSourceService"
-        ],
+        "tags": ["EventSourceService"],
         "operationId": "EventSourceService_EventSourcesLogs",
         "parameters": [
           {
@@ -1696,9 +1627,7 @@
     },
     "/api/v1/stream/events/{namespace}": {
       "get": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_WatchEvents",
         "parameters": [
           {
@@ -1791,9 +1720,7 @@
     },
     "/api/v1/stream/sensors/{namespace}": {
       "get": {
-        "tags": [
-          "SensorService"
-        ],
+        "tags": ["SensorService"],
         "operationId": "SensorService_WatchSensors",
         "parameters": [
           {
@@ -1886,9 +1813,7 @@
     },
     "/api/v1/stream/sensors/{namespace}/logs": {
       "get": {
-        "tags": [
-          "SensorService"
-        ],
+        "tags": ["SensorService"],
         "operationId": "SensorService_SensorsLogs",
         "parameters": [
           {
@@ -2008,9 +1933,7 @@
     },
     "/api/v1/userinfo": {
       "get": {
-        "tags": [
-          "InfoService"
-        ],
+        "tags": ["InfoService"],
         "operationId": "InfoService_GetUserInfo",
         "responses": {
           "200": {
@@ -2030,9 +1953,7 @@
     },
     "/api/v1/version": {
       "get": {
-        "tags": [
-          "InfoService"
-        ],
+        "tags": ["InfoService"],
         "operationId": "InfoService_GetVersion",
         "responses": {
           "200": {
@@ -2052,9 +1973,7 @@
     },
     "/api/v1/workflow-event-bindings/{namespace}": {
       "get": {
-        "tags": [
-          "EventService"
-        ],
+        "tags": ["EventService"],
         "operationId": "EventService_ListWorkflowEventBindings",
         "parameters": [
           {
@@ -2138,9 +2057,7 @@
     },
     "/api/v1/workflow-events/{namespace}": {
       "get": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_WatchWorkflows",
         "parameters": [
           {
@@ -2238,9 +2155,7 @@
     },
     "/api/v1/workflow-templates/{namespace}": {
       "get": {
-        "tags": [
-          "WorkflowTemplateService"
-        ],
+        "tags": ["WorkflowTemplateService"],
         "operationId": "WorkflowTemplateService_ListWorkflowTemplates",
         "parameters": [
           {
@@ -2322,9 +2237,7 @@
         }
       },
       "post": {
-        "tags": [
-          "WorkflowTemplateService"
-        ],
+        "tags": ["WorkflowTemplateService"],
         "operationId": "WorkflowTemplateService_CreateWorkflowTemplate",
         "parameters": [
           {
@@ -2360,9 +2273,7 @@
     },
     "/api/v1/workflow-templates/{namespace}/lint": {
       "post": {
-        "tags": [
-          "WorkflowTemplateService"
-        ],
+        "tags": ["WorkflowTemplateService"],
         "operationId": "WorkflowTemplateService_LintWorkflowTemplate",
         "parameters": [
           {
@@ -2398,9 +2309,7 @@
     },
     "/api/v1/workflow-templates/{namespace}/{name}": {
       "get": {
-        "tags": [
-          "WorkflowTemplateService"
-        ],
+        "tags": ["WorkflowTemplateService"],
         "operationId": "WorkflowTemplateService_GetWorkflowTemplate",
         "parameters": [
           {
@@ -2438,9 +2347,7 @@
         }
       },
       "put": {
-        "tags": [
-          "WorkflowTemplateService"
-        ],
+        "tags": ["WorkflowTemplateService"],
         "operationId": "WorkflowTemplateService_UpdateWorkflowTemplate",
         "parameters": [
           {
@@ -2481,9 +2388,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "WorkflowTemplateService"
-        ],
+        "tags": ["WorkflowTemplateService"],
         "operationId": "WorkflowTemplateService_DeleteWorkflowTemplate",
         "parameters": [
           {
@@ -2558,9 +2463,7 @@
     },
     "/api/v1/workflows/{namespace}": {
       "get": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_ListWorkflows",
         "parameters": [
           {
@@ -2648,9 +2551,7 @@
         }
       },
       "post": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_CreateWorkflow",
         "parameters": [
           {
@@ -2686,9 +2587,7 @@
     },
     "/api/v1/workflows/{namespace}/lint": {
       "post": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_LintWorkflow",
         "parameters": [
           {
@@ -2724,9 +2623,7 @@
     },
     "/api/v1/workflows/{namespace}/submit": {
       "post": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_SubmitWorkflow",
         "parameters": [
           {
@@ -2762,9 +2659,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}": {
       "get": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_GetWorkflow",
         "parameters": [
           {
@@ -2808,9 +2703,7 @@
         }
       },
       "delete": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_DeleteWorkflow",
         "parameters": [
           {
@@ -2885,9 +2778,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/log": {
       "get": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_WorkflowLogs",
         "parameters": [
           {
@@ -3005,9 +2896,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/resubmit": {
       "put": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_ResubmitWorkflow",
         "parameters": [
           {
@@ -3049,9 +2938,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/resume": {
       "put": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_ResumeWorkflow",
         "parameters": [
           {
@@ -3093,9 +2980,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/retry": {
       "put": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_RetryWorkflow",
         "parameters": [
           {
@@ -3137,9 +3022,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/set": {
       "put": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_SetWorkflow",
         "parameters": [
           {
@@ -3181,9 +3064,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/stop": {
       "put": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_StopWorkflow",
         "parameters": [
           {
@@ -3225,9 +3106,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/suspend": {
       "put": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_SuspendWorkflow",
         "parameters": [
           {
@@ -3269,9 +3148,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/terminate": {
       "put": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "operationId": "WorkflowService_TerminateWorkflow",
         "parameters": [
           {
@@ -3313,9 +3190,7 @@
     },
     "/api/v1/workflows/{namespace}/{name}/{podName}/log": {
       "get": {
-        "tags": [
-          "WorkflowService"
-        ],
+        "tags": ["WorkflowService"],
         "summary": "DEPRECATED: Cannot work via HTTP if podName is an empty string. Use WorkflowLogs.",
         "operationId": "WorkflowService_PodLogs",
         "parameters": [
@@ -6070,9 +5945,7 @@
     "io.argoproj.workflow.v1alpha1.Artifact": {
       "description": "Artifact indicates an artifact to place at a specified path",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "archive": {
           "description": "Archive controls how the artifact will be saved to the artifact repository.",
@@ -6197,9 +6070,7 @@
     "io.argoproj.workflow.v1alpha1.ArtifactPaths": {
       "description": "ArtifactPaths expands a step from a collection of artifacts",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "archive": {
           "description": "Archive controls how the artifact will be saved to the artifact repository.",
@@ -6279,6 +6150,36 @@
         }
       }
     },
+    "io.argoproj.workflow.v1alpha1.ArtifactRepository": {
+      "description": "ArtifactRepository represents an artifact repository in which a controller will store its artifacts",
+      "type": "object",
+      "properties": {
+        "archiveLogs": {
+          "description": "ArchiveLogs enables log archiving",
+          "type": "boolean"
+        },
+        "artifactory": {
+          "description": "Artifactory stores artifacts to JFrog Artifactory",
+          "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.ArtifactoryArtifactRepository"
+        },
+        "gcs": {
+          "description": "GCS stores artifact in a GCS object store",
+          "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.GCSArtifactRepository"
+        },
+        "hdfs": {
+          "description": "HDFS stores artifacts in HDFS",
+          "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.HDFSArtifactRepository"
+        },
+        "oss": {
+          "description": "OSS stores artifact in a OSS-compliant object store",
+          "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.OSSArtifactRepository"
+        },
+        "s3": {
+          "description": "S3 stores artifact in a S3-compliant object store",
+          "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.S3ArtifactRepository"
+        }
+      }
+    },
     "io.argoproj.workflow.v1alpha1.ArtifactRepositoryRef": {
       "type": "object",
       "properties": {
@@ -6295,6 +6196,10 @@
     "io.argoproj.workflow.v1alpha1.ArtifactRepositoryRefStatus": {
       "type": "object",
       "properties": {
+        "artifactRepository": {
+          "description": "The repository the workflow will use. This maybe empty before v3.1.",
+          "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.ArtifactRepository"
+        },
         "configMap": {
           "description": "The name of the config map. Defaults to \"artifact-repositories\".",
           "type": "string"
@@ -6316,9 +6221,7 @@
     "io.argoproj.workflow.v1alpha1.ArtifactoryArtifact": {
       "description": "ArtifactoryArtifact is the location of an artifactory artifact",
       "type": "object",
-      "required": [
-        "url"
-      ],
+      "required": ["url"],
       "properties": {
         "passwordSecret": {
           "description": "PasswordSecret is the secret selector to the repository password",
@@ -6326,6 +6229,24 @@
         },
         "url": {
           "description": "URL of the artifact",
+          "type": "string"
+        },
+        "usernameSecret": {
+          "description": "UsernameSecret is the secret selector to the repository username",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        }
+      }
+    },
+    "io.argoproj.workflow.v1alpha1.ArtifactoryArtifactRepository": {
+      "description": "ArtifactoryArtifactRepository defines the controller configuration for an artifactory artifact repository",
+      "type": "object",
+      "properties": {
+        "passwordSecret": {
+          "description": "PasswordSecret is the secret selector to the repository password",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        },
+        "repoURL": {
+          "description": "RepoURL is the url for artifactory repo.",
           "type": "string"
         },
         "usernameSecret": {
@@ -6355,9 +6276,7 @@
     "io.argoproj.workflow.v1alpha1.Cache": {
       "description": "Cache is the configuration for the type of cache to be used",
       "type": "object",
-      "required": [
-        "configMap"
-      ],
+      "required": ["configMap"],
       "properties": {
         "configMap": {
           "description": "ConfigMap sets a ConfigMap-based cache",
@@ -6368,10 +6287,7 @@
     "io.argoproj.workflow.v1alpha1.ClusterWorkflowTemplate": {
       "description": "ClusterWorkflowTemplate is the definition of a workflow template resource in cluster scope",
       "type": "object",
-      "required": [
-        "metadata",
-        "spec"
-      ],
+      "required": ["metadata", "spec"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -6417,10 +6333,7 @@
     "io.argoproj.workflow.v1alpha1.ClusterWorkflowTemplateList": {
       "description": "ClusterWorkflowTemplateList is list of ClusterWorkflowTemplate resources",
       "type": "object",
-      "required": [
-        "metadata",
-        "items"
-      ],
+      "required": ["metadata", "items"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -6472,9 +6385,7 @@
     },
     "io.argoproj.workflow.v1alpha1.ContainerNode": {
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "args": {
           "description": "Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell",
@@ -6538,10 +6449,7 @@
           "items": {
             "$ref": "#/definitions/io.k8s.api.core.v1.ContainerPort"
           },
-          "x-kubernetes-list-map-keys": [
-            "containerPort",
-            "protocol"
-          ],
+          "x-kubernetes-list-map-keys": ["containerPort", "protocol"],
           "x-kubernetes-list-type": "map",
           "x-kubernetes-patch-merge-key": "containerPort",
           "x-kubernetes-patch-strategy": "merge"
@@ -6608,9 +6516,7 @@
     },
     "io.argoproj.workflow.v1alpha1.ContainerSetTemplate": {
       "type": "object",
-      "required": [
-        "containers"
-      ],
+      "required": ["containers"],
       "properties": {
         "containers": {
           "type": "array",
@@ -6641,9 +6547,7 @@
     "io.argoproj.workflow.v1alpha1.Counter": {
       "description": "Counter is a Counter prometheus metric",
       "type": "object",
-      "required": [
-        "value"
-      ],
+      "required": ["value"],
       "properties": {
         "value": {
           "description": "Value is the value of the metric",
@@ -6678,10 +6582,7 @@
     "io.argoproj.workflow.v1alpha1.CronWorkflow": {
       "description": "CronWorkflow is the definition of a scheduled workflow resource",
       "type": "object",
-      "required": [
-        "metadata",
-        "spec"
-      ],
+      "required": ["metadata", "spec"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -6708,10 +6609,7 @@
     "io.argoproj.workflow.v1alpha1.CronWorkflowList": {
       "description": "CronWorkflowList is list of CronWorkflow resources",
       "type": "object",
-      "required": [
-        "metadata",
-        "items"
-      ],
+      "required": ["metadata", "items"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -6746,10 +6644,7 @@
     "io.argoproj.workflow.v1alpha1.CronWorkflowSpec": {
       "description": "CronWorkflowSpec is the specification of a CronWorkflow",
       "type": "object",
-      "required": [
-        "workflowSpec",
-        "schedule"
-      ],
+      "required": ["workflowSpec", "schedule"],
       "properties": {
         "concurrencyPolicy": {
           "description": "ConcurrencyPolicy is the K8s-style concurrency policy that will be used",
@@ -6792,11 +6687,7 @@
     "io.argoproj.workflow.v1alpha1.CronWorkflowStatus": {
       "description": "CronWorkflowStatus is the status of a CronWorkflow",
       "type": "object",
-      "required": [
-        "active",
-        "lastScheduledTime",
-        "conditions"
-      ],
+      "required": ["active", "lastScheduledTime", "conditions"],
       "properties": {
         "active": {
           "description": "Active is a list of active workflows stemming from this CronWorkflow",
@@ -6832,9 +6723,7 @@
     "io.argoproj.workflow.v1alpha1.DAGTask": {
       "description": "DAGTask represents a node in the graph during DAG execution",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "arguments": {
           "description": "Arguments are the parameter and artifact arguments to the template",
@@ -6902,9 +6791,7 @@
     "io.argoproj.workflow.v1alpha1.DAGTemplate": {
       "description": "DAGTemplate is a template subtype for directed acyclic graph templates",
       "type": "object",
-      "required": [
-        "tasks"
-      ],
+      "required": ["tasks"],
       "properties": {
         "failFast": {
           "description": "This flag is for DAG logic. The DAG logic has a built-in \"fail fast\" feature to stop scheduling new steps, as soon as it detects that one of the DAG nodes is failed. Then it waits until all DAG nodes are completed before failing the DAG itself. The FailFast flag default is true,  if set to false, it will allow a DAG to run all branches of the DAG to completion (either success or failure), regardless of the failed outcomes of branches in the DAG. More info and example about this feature at https://github.com/argoproj/argo-workflows/issues/1442",
@@ -6928,10 +6815,7 @@
     "io.argoproj.workflow.v1alpha1.Data": {
       "description": "Data is a data template",
       "type": "object",
-      "required": [
-        "source",
-        "transformation"
-      ],
+      "required": ["source", "transformation"],
       "properties": {
         "source": {
           "description": "Source sources external data into a data template",
@@ -6958,9 +6842,7 @@
     },
     "io.argoproj.workflow.v1alpha1.Event": {
       "type": "object",
-      "required": [
-        "selector"
-      ],
+      "required": ["selector"],
       "properties": {
         "selector": {
           "description": "Selector (https://github.com/antonmedv/expr) that we must must match the io.argoproj.workflow.v1alpha1. E.g. `payload.message == \"test\"`",
@@ -6984,9 +6866,7 @@
     "io.argoproj.workflow.v1alpha1.GCSArtifact": {
       "description": "GCSArtifact is the location of a GCS artifact",
       "type": "object",
-      "required": [
-        "key"
-      ],
+      "required": ["key"],
       "properties": {
         "bucket": {
           "description": "Bucket is the name of the bucket",
@@ -7002,13 +6882,28 @@
         }
       }
     },
+    "io.argoproj.workflow.v1alpha1.GCSArtifactRepository": {
+      "description": "GCSArtifactRepository defines the controller configuration for a GCS artifact repository",
+      "type": "object",
+      "properties": {
+        "bucket": {
+          "description": "Bucket is the name of the bucket",
+          "type": "string"
+        },
+        "keyFormat": {
+          "description": "KeyFormat is defines the format of how to store keys. Can reference workflow variables",
+          "type": "string"
+        },
+        "serviceAccountKeySecret": {
+          "description": "ServiceAccountKeySecret is the secret selector to the bucket's service account key",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        }
+      }
+    },
     "io.argoproj.workflow.v1alpha1.Gauge": {
       "description": "Gauge is a Gauge prometheus metric",
       "type": "object",
-      "required": [
-        "value",
-        "realtime"
-      ],
+      "required": ["value", "realtime"],
       "properties": {
         "realtime": {
           "description": "Realtime emits this metric in real time if applicable",
@@ -7049,9 +6944,7 @@
     "io.argoproj.workflow.v1alpha1.GitArtifact": {
       "description": "GitArtifact is the location of an git artifact",
       "type": "object",
-      "required": [
-        "repo"
-      ],
+      "required": ["repo"],
       "properties": {
         "depth": {
           "description": "Depth specifies clones/fetches should be shallow and include the given number of commits from the branch tip",
@@ -7097,9 +6990,7 @@
     "io.argoproj.workflow.v1alpha1.HDFSArtifact": {
       "description": "HDFSArtifact is the location of an HDFS artifact",
       "type": "object",
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "properties": {
         "addresses": {
           "description": "Addresses is accessible addresses of HDFS name nodes",
@@ -7146,12 +7037,89 @@
         }
       }
     },
+    "io.argoproj.workflow.v1alpha1.HDFSArtifactRepository": {
+      "description": "HDFSArtifactRepository defines the controller configuration for an HDFS artifact repository",
+      "type": "object",
+      "properties": {
+        "addresses": {
+          "description": "Addresses is accessible addresses of HDFS name nodes",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "force": {
+          "description": "Force copies a file forcibly even if it exists (default: false)",
+          "type": "boolean"
+        },
+        "hdfsUser": {
+          "description": "HDFSUser is the user to access HDFS file system. It is ignored if either ccache or keytab is used.",
+          "type": "string"
+        },
+        "krbCCacheSecret": {
+          "description": "KrbCCacheSecret is the secret selector for Kerberos ccache Either ccache or keytab can be set to use Kerberos.",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        },
+        "krbConfigConfigMap": {
+          "description": "KrbConfig is the configmap selector for Kerberos config as string It must be set if either ccache or keytab is used.",
+          "$ref": "#/definitions/io.k8s.api.core.v1.ConfigMapKeySelector"
+        },
+        "krbKeytabSecret": {
+          "description": "KrbKeytabSecret is the secret selector for Kerberos keytab Either ccache or keytab can be set to use Kerberos.",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        },
+        "krbRealm": {
+          "description": "KrbRealm is the Kerberos realm used with Kerberos keytab It must be set if keytab is used.",
+          "type": "string"
+        },
+        "krbServicePrincipalName": {
+          "description": "KrbServicePrincipalName is the principal name of Kerberos service It must be set if either ccache or keytab is used.",
+          "type": "string"
+        },
+        "krbUsername": {
+          "description": "KrbUsername is the Kerberos username used with Kerberos keytab It must be set if keytab is used.",
+          "type": "string"
+        },
+        "pathFormat": {
+          "description": "PathFormat is defines the format of path to store a file. Can reference workflow variables",
+          "type": "string"
+        }
+      }
+    },
+    "io.argoproj.workflow.v1alpha1.HTTP": {
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "body": {
+          "description": "Body is content of the HTTP Request",
+          "type": "string",
+          "format": "byte"
+        },
+        "headers": {
+          "description": "Headers are an optional list of headers to send with HTTP requests",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.HTTPHeader"
+          }
+        },
+        "method": {
+          "description": "Method is HTTP methods for HTTP Request",
+          "type": "string"
+        },
+        "timeoutSeconds": {
+          "description": "TimeoutSeconds is request timeout for HTTP Request. Default is 30 seconds",
+          "type": "integer"
+        },
+        "url": {
+          "description": "URL of the HTTP Request",
+          "type": "string"
+        }
+      }
+    },
     "io.argoproj.workflow.v1alpha1.HTTPArtifact": {
       "description": "HTTPArtifact allows an file served on HTTP to be placed as an input artifact in a container",
       "type": "object",
-      "required": [
-        "url"
-      ],
+      "required": ["url"],
       "properties": {
         "headers": {
           "description": "Headers are an optional list of headers to send with HTTP requests for artifacts",
@@ -7169,10 +7137,7 @@
     "io.argoproj.workflow.v1alpha1.Header": {
       "description": "Header indicate a key-value request header to be used when fetching artifacts over HTTP",
       "type": "object",
-      "required": [
-        "name",
-        "value"
-      ],
+      "required": ["name", "value"],
       "properties": {
         "name": {
           "description": "Name is the header name",
@@ -7187,10 +7152,7 @@
     "io.argoproj.workflow.v1alpha1.Histogram": {
       "description": "Histogram is a Histogram prometheus metric",
       "type": "object",
-      "required": [
-        "value",
-        "buckets"
-      ],
+      "required": ["value", "buckets"],
       "properties": {
         "buckets": {
           "description": "Buckets is a list of bucket divisors for the histogram",
@@ -7248,9 +7210,7 @@
     },
     "io.argoproj.workflow.v1alpha1.LifecycleHook": {
       "type": "object",
-      "required": [
-        "template"
-      ],
+      "required": ["template"],
       "properties": {
         "arguments": {
           "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.Arguments"
@@ -7263,11 +7223,7 @@
     "io.argoproj.workflow.v1alpha1.Link": {
       "description": "A link to another app.",
       "type": "object",
-      "required": [
-        "name",
-        "scope",
-        "url"
-      ],
+      "required": ["name", "scope", "url"],
       "properties": {
         "name": {
           "description": "The name of the link, E.g. \"Workflow Logs\" or \"Pod Logs\"",
@@ -7310,11 +7266,7 @@
     "io.argoproj.workflow.v1alpha1.MemoizationStatus": {
       "description": "MemoizationStatus is the status of this memoized node",
       "type": "object",
-      "required": [
-        "hit",
-        "key",
-        "cacheName"
-      ],
+      "required": ["hit", "key", "cacheName"],
       "properties": {
         "cacheName": {
           "description": "Cache is the name of the cache that was used",
@@ -7333,11 +7285,7 @@
     "io.argoproj.workflow.v1alpha1.Memoize": {
       "description": "Memoization enables caching for the Outputs of the template",
       "type": "object",
-      "required": [
-        "key",
-        "cache",
-        "maxAge"
-      ],
+      "required": ["key", "cache", "maxAge"],
       "properties": {
         "cache": {
           "description": "Cache sets and configures the kind of cache",
@@ -7374,10 +7322,7 @@
     "io.argoproj.workflow.v1alpha1.MetricLabel": {
       "description": "MetricLabel is a single label for a prometheus metric",
       "type": "object",
-      "required": [
-        "key",
-        "value"
-      ],
+      "required": ["key", "value"],
       "properties": {
         "key": {
           "type": "string"
@@ -7390,9 +7335,7 @@
     "io.argoproj.workflow.v1alpha1.Metrics": {
       "description": "Metrics are a list of metrics emitted from a Workflow/Template",
       "type": "object",
-      "required": [
-        "prometheus"
-      ],
+      "required": ["prometheus"],
       "properties": {
         "prometheus": {
           "description": "Prometheus is a list of prometheus metrics to be emitted",
@@ -7452,11 +7395,7 @@
     "io.argoproj.workflow.v1alpha1.NodeStatus": {
       "description": "NodeStatus contains status information about an individual node in the workflow",
       "type": "object",
-      "required": [
-        "id",
-        "name",
-        "type"
-      ],
+      "required": ["id", "name", "type"],
       "properties": {
         "boundaryID": {
           "description": "BoundaryID indicates the node ID of the associated template root node in which this node belongs to",
@@ -7583,9 +7522,7 @@
     "io.argoproj.workflow.v1alpha1.OSSArtifact": {
       "description": "OSSArtifact is the location of an Alibaba Cloud OSS artifact",
       "type": "object",
-      "required": [
-        "key"
-      ],
+      "required": ["key"],
       "properties": {
         "accessKeySecret": {
           "description": "AccessKeySecret is the secret selector to the bucket's access key",
@@ -7605,6 +7542,44 @@
         },
         "key": {
           "description": "Key is the path in the bucket where the artifact resides",
+          "type": "string"
+        },
+        "lifecycleRule": {
+          "description": "LifecycleRule specifies how to manage bucket's lifecycle",
+          "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.OSSLifecycleRule"
+        },
+        "secretKeySecret": {
+          "description": "SecretKeySecret is the secret selector to the bucket's secret key",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        },
+        "securityToken": {
+          "description": "SecurityToken is the user's temporary security token. For more details, check out: https://www.alibabacloud.com/help/doc-detail/100624.htm",
+          "type": "string"
+        }
+      }
+    },
+    "io.argoproj.workflow.v1alpha1.OSSArtifactRepository": {
+      "description": "OSSArtifactRepository defines the controller configuration for an OSS artifact repository",
+      "type": "object",
+      "properties": {
+        "accessKeySecret": {
+          "description": "AccessKeySecret is the secret selector to the bucket's access key",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        },
+        "bucket": {
+          "description": "Bucket is the name of the bucket",
+          "type": "string"
+        },
+        "createBucketIfNotPresent": {
+          "description": "CreateBucketIfNotPresent tells the driver to attempt to create the OSS bucket for output artifacts, if it doesn't exist",
+          "type": "boolean"
+        },
+        "endpoint": {
+          "description": "Endpoint is the hostname of the bucket endpoint",
+          "type": "string"
+        },
+        "keyFormat": {
+          "description": "KeyFormat is defines the format of how to store keys. Can reference workflow variables",
           "type": "string"
         },
         "lifecycleRule": {
@@ -7676,9 +7651,7 @@
     "io.argoproj.workflow.v1alpha1.Parameter": {
       "description": "Parameter indicate a passed string parameter to a service template with an optional default value",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "default": {
           "description": "Default is the default value to use for an input parameter if a value was not supplied",
@@ -7726,10 +7699,7 @@
     "io.argoproj.workflow.v1alpha1.Prometheus": {
       "description": "Prometheus is a prometheus metric to be emitted",
       "type": "object",
-      "required": [
-        "name",
-        "help"
-      ],
+      "required": ["name", "help"],
       "properties": {
         "counter": {
           "description": "Counter is a counter metric",
@@ -7767,9 +7737,7 @@
     "io.argoproj.workflow.v1alpha1.RawArtifact": {
       "description": "RawArtifact allows raw string content to be placed as an artifact in a container",
       "type": "object",
-      "required": [
-        "data"
-      ],
+      "required": ["data"],
       "properties": {
         "data": {
           "description": "Data is the string contents of the artifact",
@@ -7780,9 +7748,7 @@
     "io.argoproj.workflow.v1alpha1.ResourceTemplate": {
       "description": "ResourceTemplate is a template subtype to manipulate kubernetes resources",
       "type": "object",
-      "required": [
-        "action"
-      ],
+      "required": ["action"],
       "properties": {
         "action": {
           "description": "Action is the action to perform to the resource. Must be one of: get, create, apply, delete, replace, patch",
@@ -7898,13 +7864,60 @@
         }
       }
     },
+    "io.argoproj.workflow.v1alpha1.S3ArtifactRepository": {
+      "description": "S3ArtifactRepository defines the controller configuration for an S3 artifact repository",
+      "type": "object",
+      "properties": {
+        "accessKeySecret": {
+          "description": "AccessKeySecret is the secret selector to the bucket's access key",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        },
+        "bucket": {
+          "description": "Bucket is the name of the bucket",
+          "type": "string"
+        },
+        "createBucketIfNotPresent": {
+          "description": "CreateBucketIfNotPresent tells the driver to attempt to create the S3 bucket for output artifacts, if it doesn't exist",
+          "$ref": "#/definitions/io.argoproj.workflow.v1alpha1.CreateS3BucketOptions"
+        },
+        "endpoint": {
+          "description": "Endpoint is the hostname of the bucket endpoint",
+          "type": "string"
+        },
+        "insecure": {
+          "description": "Insecure will connect to the service with TLS",
+          "type": "boolean"
+        },
+        "keyFormat": {
+          "description": "KeyFormat is defines the format of how to store keys. Can reference workflow variables",
+          "type": "string"
+        },
+        "keyPrefix": {
+          "description": "KeyPrefix is prefix used as part of the bucket key in which the controller will store artifacts. DEPRECATED. Use KeyFormat instead",
+          "type": "string"
+        },
+        "region": {
+          "description": "Region contains the optional bucket region",
+          "type": "string"
+        },
+        "roleARN": {
+          "description": "RoleARN is the Amazon Resource Name (ARN) of the role to assume.",
+          "type": "string"
+        },
+        "secretKeySecret": {
+          "description": "SecretKeySecret is the secret selector to the bucket's secret key",
+          "$ref": "#/definitions/io.k8s.api.core.v1.SecretKeySelector"
+        },
+        "useSDKCreds": {
+          "description": "UseSDKCreds tells the driver to figure out credentials based on sdk defaults.",
+          "type": "boolean"
+        }
+      }
+    },
     "io.argoproj.workflow.v1alpha1.ScriptTemplate": {
       "description": "ScriptTemplate is a template subtype to enable scripting through code steps",
       "type": "object",
-      "required": [
-        "image",
-        "source"
-      ],
+      "required": ["image", "source"],
       "properties": {
         "args": {
           "description": "Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell",
@@ -7962,10 +7975,7 @@
           "items": {
             "$ref": "#/definitions/io.k8s.api.core.v1.ContainerPort"
           },
-          "x-kubernetes-list-map-keys": [
-            "containerPort",
-            "protocol"
-          ],
+          "x-kubernetes-list-map-keys": ["containerPort", "protocol"],
           "x-kubernetes-list-type": "map",
           "x-kubernetes-patch-merge-key": "containerPort",
           "x-kubernetes-patch-strategy": "merge"
@@ -8104,9 +8114,7 @@
     },
     "io.argoproj.workflow.v1alpha1.Submit": {
       "type": "object",
-      "required": [
-        "workflowTemplateRef"
-      ],
+      "required": ["workflowTemplateRef"],
       "properties": {
         "arguments": {
           "description": "Arguments extracted from the event and then set as arguments to the workflow created.",
@@ -8450,9 +8458,7 @@
     },
     "io.argoproj.workflow.v1alpha1.TransformationStep": {
       "type": "object",
-      "required": [
-        "expression"
-      ],
+      "required": ["expression"],
       "properties": {
         "expression": {
           "description": "Expression defines an expr expression to apply",
@@ -8478,9 +8484,7 @@
     "io.argoproj.workflow.v1alpha1.UserContainer": {
       "description": "UserContainer is a container specified by a user.",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "args": {
           "description": "Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell",
@@ -8542,10 +8546,7 @@
           "items": {
             "$ref": "#/definitions/io.k8s.api.core.v1.ContainerPort"
           },
-          "x-kubernetes-list-map-keys": [
-            "containerPort",
-            "protocol"
-          ],
+          "x-kubernetes-list-map-keys": ["containerPort", "protocol"],
           "x-kubernetes-list-type": "map",
           "x-kubernetes-patch-merge-key": "containerPort",
           "x-kubernetes-patch-strategy": "merge"
@@ -8700,10 +8701,7 @@
     "io.argoproj.workflow.v1alpha1.Workflow": {
       "description": "Workflow is the definition of a workflow resource",
       "type": "object",
-      "required": [
-        "metadata",
-        "spec"
-      ],
+      "required": ["metadata", "spec"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -8751,10 +8749,7 @@
     "io.argoproj.workflow.v1alpha1.WorkflowEventBinding": {
       "description": "WorkflowEventBinding is the definition of an event resource",
       "type": "object",
-      "required": [
-        "metadata",
-        "spec"
-      ],
+      "required": ["metadata", "spec"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -8775,10 +8770,7 @@
     "io.argoproj.workflow.v1alpha1.WorkflowEventBindingList": {
       "description": "WorkflowEventBindingList is list of event resources",
       "type": "object",
-      "required": [
-        "metadata",
-        "items"
-      ],
+      "required": ["metadata", "items"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -8801,9 +8793,7 @@
     },
     "io.argoproj.workflow.v1alpha1.WorkflowEventBindingSpec": {
       "type": "object",
-      "required": [
-        "event"
-      ],
+      "required": ["event"],
       "properties": {
         "event": {
           "description": "Event is the event to bind to",
@@ -8829,10 +8819,7 @@
     "io.argoproj.workflow.v1alpha1.WorkflowList": {
       "description": "WorkflowList is list of Workflow resources",
       "type": "object",
-      "required": [
-        "metadata",
-        "items"
-      ],
+      "required": ["metadata", "items"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -9305,10 +9292,7 @@
     "io.argoproj.workflow.v1alpha1.WorkflowTemplate": {
       "description": "WorkflowTemplate is the definition of a workflow template resource",
       "type": "object",
-      "required": [
-        "metadata",
-        "spec"
-      ],
+      "required": ["metadata", "spec"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -9360,10 +9344,7 @@
     "io.argoproj.workflow.v1alpha1.WorkflowTemplateList": {
       "description": "WorkflowTemplateList is list of WorkflowTemplate resources",
       "type": "object",
-      "required": [
-        "metadata",
-        "items"
-      ],
+      "required": ["metadata", "items"],
       "properties": {
         "apiVersion": {
           "description": "APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.io.k8s.community/contributors/devel/sig-architecture/api-conventions.md#resources",
@@ -9638,9 +9619,7 @@
     "io.k8s.api.core.v1.AWSElasticBlockStoreVolumeSource": {
       "description": "Represents a Persistent Disk resource in AWS.\n\nAn AWS EBS disk must exist before mounting to a container. The disk must also be in the same AWS zone as the kubelet. An AWS EBS disk can only be mounted as read/write once. AWS EBS volumes support ownership management and SELinux relabeling.",
       "type": "object",
-      "required": [
-        "volumeID"
-      ],
+      "required": ["volumeID"],
       "properties": {
         "fsType": {
           "description": "Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore",
@@ -9681,10 +9660,7 @@
     "io.k8s.api.core.v1.AzureDiskVolumeSource": {
       "description": "AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.",
       "type": "object",
-      "required": [
-        "diskName",
-        "diskURI"
-      ],
+      "required": ["diskName", "diskURI"],
       "properties": {
         "cachingMode": {
           "description": "Host Caching mode: None, Read Only, Read Write.",
@@ -9715,10 +9691,7 @@
     "io.k8s.api.core.v1.AzureFileVolumeSource": {
       "description": "AzureFile represents an Azure File Service mount on the host and bind mount to the pod.",
       "type": "object",
-      "required": [
-        "secretName",
-        "shareName"
-      ],
+      "required": ["secretName", "shareName"],
       "properties": {
         "readOnly": {
           "description": "Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.",
@@ -9737,9 +9710,7 @@
     "io.k8s.api.core.v1.CSIVolumeSource": {
       "description": "Represents a source location of a volume to mount, managed by an external CSI driver",
       "type": "object",
-      "required": [
-        "driver"
-      ],
+      "required": ["driver"],
       "properties": {
         "driver": {
           "description": "Driver is the name of the CSI driver that handles this volume. Consult with your admin for the correct name as registered in the cluster.",
@@ -9789,9 +9760,7 @@
     "io.k8s.api.core.v1.CephFSVolumeSource": {
       "description": "Represents a Ceph Filesystem mount that lasts the lifetime of a pod Cephfs volumes do not support ownership management or SELinux relabeling.",
       "type": "object",
-      "required": [
-        "monitors"
-      ],
+      "required": ["monitors"],
       "properties": {
         "monitors": {
           "description": "Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it",
@@ -9825,9 +9794,7 @@
     "io.k8s.api.core.v1.CinderVolumeSource": {
       "description": "Represents a cinder volume resource in Openstack. A Cinder volume must exist before mounting to a container. The volume must also be in the same region as the kubelet. Cinder volumes support ownership management and SELinux relabeling.",
       "type": "object",
-      "required": [
-        "volumeID"
-      ],
+      "required": ["volumeID"],
       "properties": {
         "fsType": {
           "description": "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md",
@@ -9864,9 +9831,7 @@
     "io.k8s.api.core.v1.ConfigMapKeySelector": {
       "description": "Selects a key from a ConfigMap.",
       "type": "object",
-      "required": [
-        "key"
-      ],
+      "required": ["key"],
       "properties": {
         "key": {
           "description": "The key to select.",
@@ -9931,9 +9896,7 @@
     "io.k8s.api.core.v1.Container": {
       "description": "A single application container that you want to run within a pod.",
       "type": "object",
-      "required": [
-        "image"
-      ],
+      "required": ["image"],
       "properties": {
         "args": {
           "description": "Arguments to the entrypoint. The docker image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell",
@@ -9991,10 +9954,7 @@
           "items": {
             "$ref": "#/definitions/io.k8s.api.core.v1.ContainerPort"
           },
-          "x-kubernetes-list-map-keys": [
-            "containerPort",
-            "protocol"
-          ],
+          "x-kubernetes-list-map-keys": ["containerPort", "protocol"],
           "x-kubernetes-list-type": "map",
           "x-kubernetes-patch-merge-key": "containerPort",
           "x-kubernetes-patch-strategy": "merge"
@@ -10062,9 +10022,7 @@
     "io.k8s.api.core.v1.ContainerPort": {
       "description": "ContainerPort represents a network port in a single container.",
       "type": "object",
-      "required": [
-        "containerPort"
-      ],
+      "required": ["containerPort"],
       "properties": {
         "containerPort": {
           "description": "Number of port to expose on the pod's IP address. This must be a valid port number, 0 \u003c x \u003c 65536.",
@@ -10104,9 +10062,7 @@
     "io.k8s.api.core.v1.DownwardAPIVolumeFile": {
       "description": "DownwardAPIVolumeFile represents information to create the file containing the pod field",
       "type": "object",
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "properties": {
         "fieldRef": {
           "description": "Required: Selects a field of the pod: only annotations, labels, name and namespace are supported.",
@@ -10178,9 +10134,7 @@
     "io.k8s.api.core.v1.EnvVar": {
       "description": "EnvVar represents an environment variable present in a Container.",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "name": {
           "description": "Name of the environment variable. Must be a C_IDENTIFIER.",
@@ -10235,10 +10189,7 @@
     "io.k8s.api.core.v1.Event": {
       "description": "Event is a report of an event somewhere in the cluster.",
       "type": "object",
-      "required": [
-        "metadata",
-        "involvedObject"
-      ],
+      "required": ["metadata", "involvedObject"],
       "properties": {
         "action": {
           "description": "What action was taken/failed regarding to the Regarding object.",
@@ -10397,9 +10348,7 @@
     "io.k8s.api.core.v1.FlexVolumeSource": {
       "description": "FlexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.",
       "type": "object",
-      "required": [
-        "driver"
-      ],
+      "required": ["driver"],
       "properties": {
         "driver": {
           "description": "Driver is the name of the driver to use for this volume.",
@@ -10443,9 +10392,7 @@
     "io.k8s.api.core.v1.GCEPersistentDiskVolumeSource": {
       "description": "Represents a Persistent Disk resource in Google Compute Engine.\n\nA GCE PD must exist before mounting to a container. The disk must also be in the same GCE project and zone as the kubelet. A GCE PD can only be mounted as read/write once or read-only many times. GCE PDs support ownership management and SELinux relabeling.",
       "type": "object",
-      "required": [
-        "pdName"
-      ],
+      "required": ["pdName"],
       "properties": {
         "fsType": {
           "description": "Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk",
@@ -10468,9 +10415,7 @@
     "io.k8s.api.core.v1.GitRepoVolumeSource": {
       "description": "Represents a volume that is populated with the contents of a git repository. Git repo volumes do not support ownership management. Git repo volumes support SELinux relabeling.\n\nDEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's container.",
       "type": "object",
-      "required": [
-        "repository"
-      ],
+      "required": ["repository"],
       "properties": {
         "directory": {
           "description": "Target directory name. Must not contain or start with '..'.  If '.' is supplied, the volume directory will be the git repository.  Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.",
@@ -10489,10 +10434,7 @@
     "io.k8s.api.core.v1.GlusterfsVolumeSource": {
       "description": "Represents a Glusterfs mount that lasts the lifetime of a pod. Glusterfs volumes do not support ownership management or SELinux relabeling.",
       "type": "object",
-      "required": [
-        "endpoints",
-        "path"
-      ],
+      "required": ["endpoints", "path"],
       "properties": {
         "endpoints": {
           "description": "EndpointsName is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod",
@@ -10511,9 +10453,7 @@
     "io.k8s.api.core.v1.HTTPGetAction": {
       "description": "HTTPGetAction describes an action based on HTTP Get requests.",
       "type": "object",
-      "required": [
-        "port"
-      ],
+      "required": ["port"],
       "properties": {
         "host": {
           "description": "Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead.",
@@ -10543,10 +10483,7 @@
     "io.k8s.api.core.v1.HTTPHeader": {
       "description": "HTTPHeader describes a custom header to be used in HTTP probes",
       "type": "object",
-      "required": [
-        "name",
-        "value"
-      ],
+      "required": ["name", "value"],
       "properties": {
         "name": {
           "description": "The header field name",
@@ -10596,9 +10533,7 @@
     "io.k8s.api.core.v1.HostPathVolumeSource": {
       "description": "Represents a host path mapped into a pod. Host path volumes do not support ownership management or SELinux relabeling.",
       "type": "object",
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "properties": {
         "path": {
           "description": "Path of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath",
@@ -10613,11 +10548,7 @@
     "io.k8s.api.core.v1.ISCSIVolumeSource": {
       "description": "Represents an ISCSI disk. ISCSI volumes can only be mounted as read/write once. ISCSI volumes support ownership management and SELinux relabeling.",
       "type": "object",
-      "required": [
-        "targetPortal",
-        "iqn",
-        "lun"
-      ],
+      "required": ["targetPortal", "iqn", "lun"],
       "properties": {
         "chapAuthDiscovery": {
           "description": "whether support iSCSI Discovery CHAP authentication",
@@ -10671,10 +10602,7 @@
     "io.k8s.api.core.v1.KeyToPath": {
       "description": "Maps a string key to a path within a volume.",
       "type": "object",
-      "required": [
-        "key",
-        "path"
-      ],
+      "required": ["key", "path"],
       "properties": {
         "key": {
           "description": "The key to project.",
@@ -10717,10 +10645,7 @@
     "io.k8s.api.core.v1.NFSVolumeSource": {
       "description": "Represents an NFS mount that lasts the lifetime of a pod. NFS volumes do not support ownership management or SELinux relabeling.",
       "type": "object",
-      "required": [
-        "server",
-        "path"
-      ],
+      "required": ["server", "path"],
       "properties": {
         "path": {
           "description": "Path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs",
@@ -10756,9 +10681,7 @@
     "io.k8s.api.core.v1.NodeSelector": {
       "description": "A node selector represents the union of the results of one or more label queries over a set of nodes; that is, it represents the OR of the selectors represented by the node selector terms.",
       "type": "object",
-      "required": [
-        "nodeSelectorTerms"
-      ],
+      "required": ["nodeSelectorTerms"],
       "properties": {
         "nodeSelectorTerms": {
           "description": "Required. A list of node selector terms. The terms are ORed.",
@@ -10772,10 +10695,7 @@
     "io.k8s.api.core.v1.NodeSelectorRequirement": {
       "description": "A node selector requirement is a selector that contains values, a key, and an operator that relates the key and values.",
       "type": "object",
-      "required": [
-        "key",
-        "operator"
-      ],
+      "required": ["key", "operator"],
       "properties": {
         "key": {
           "description": "The label key that the selector applies to.",
@@ -10817,9 +10737,7 @@
     "io.k8s.api.core.v1.ObjectFieldSelector": {
       "description": "ObjectFieldSelector selects an APIVersioned field of an object.",
       "type": "object",
-      "required": [
-        "fieldPath"
-      ],
+      "required": ["fieldPath"],
       "properties": {
         "apiVersion": {
           "description": "Version of the schema the FieldPath is written in terms of, defaults to \"v1\".",
@@ -10901,10 +10819,7 @@
     "io.k8s.api.core.v1.PersistentVolumeClaimCondition": {
       "description": "PersistentVolumeClaimCondition contails details about state of pvc",
       "type": "object",
-      "required": [
-        "type",
-        "status"
-      ],
+      "required": ["type", "status"],
       "properties": {
         "lastProbeTime": {
           "description": "Last time we probed the condition.",
@@ -11017,9 +10932,7 @@
     "io.k8s.api.core.v1.PersistentVolumeClaimVolumeSource": {
       "description": "PersistentVolumeClaimVolumeSource references the user's PVC in the same namespace. This volume finds the bound PV and mounts that volume for the pod. A PersistentVolumeClaimVolumeSource is, essentially, a wrapper around another type of volume that is owned by someone else (the system).",
       "type": "object",
-      "required": [
-        "claimName"
-      ],
+      "required": ["claimName"],
       "properties": {
         "claimName": {
           "description": "ClaimName is the name of a PersistentVolumeClaim in the same namespace as the pod using this volume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims",
@@ -11034,9 +10947,7 @@
     "io.k8s.api.core.v1.PhotonPersistentDiskVolumeSource": {
       "description": "Represents a Photon Controller persistent disk resource.",
       "type": "object",
-      "required": [
-        "pdID"
-      ],
+      "required": ["pdID"],
       "properties": {
         "fsType": {
           "description": "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.",
@@ -11071,9 +10982,7 @@
     "io.k8s.api.core.v1.PodAffinityTerm": {
       "description": "Defines a set of pods (namely those matching the labelSelector relative to the given namespace(s)) that this pod should be co-located (affinity) or not co-located (anti-affinity) with, where co-located is defined as running on a node whose value of the label with key \u003ctopologyKey\u003e matches that of any node on which a pod of the set of pods is running",
       "type": "object",
-      "required": [
-        "topologyKey"
-      ],
+      "required": ["topologyKey"],
       "properties": {
         "labelSelector": {
           "description": "A label query over a set of resources, in this case pods.",
@@ -11200,9 +11109,7 @@
     "io.k8s.api.core.v1.PortworxVolumeSource": {
       "description": "PortworxVolumeSource represents a Portworx volume resource.",
       "type": "object",
-      "required": [
-        "volumeID"
-      ],
+      "required": ["volumeID"],
       "properties": {
         "fsType": {
           "description": "FSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\". Implicitly inferred to be \"ext4\" if unspecified.",
@@ -11221,10 +11128,7 @@
     "io.k8s.api.core.v1.PreferredSchedulingTerm": {
       "description": "An empty preferred scheduling term matches all objects with implicit weight 0 (i.e. it's a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).",
       "type": "object",
-      "required": [
-        "weight",
-        "preference"
-      ],
+      "required": ["weight", "preference"],
       "properties": {
         "preference": {
           "description": "A node selector term, associated with the corresponding weight.",
@@ -11277,9 +11181,7 @@
     "io.k8s.api.core.v1.ProjectedVolumeSource": {
       "description": "Represents a projected volume source",
       "type": "object",
-      "required": [
-        "sources"
-      ],
+      "required": ["sources"],
       "properties": {
         "defaultMode": {
           "description": "Mode bits to use on created files by default. Must be a value between 0 and 0777. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.",
@@ -11297,10 +11199,7 @@
     "io.k8s.api.core.v1.QuobyteVolumeSource": {
       "description": "Represents a Quobyte mount that lasts the lifetime of a pod. Quobyte volumes do not support ownership management or SELinux relabeling.",
       "type": "object",
-      "required": [
-        "registry",
-        "volume"
-      ],
+      "required": ["registry", "volume"],
       "properties": {
         "group": {
           "description": "Group to map volume access to Default is no group",
@@ -11331,10 +11230,7 @@
     "io.k8s.api.core.v1.RBDVolumeSource": {
       "description": "Represents a Rados Block Device mount that lasts the lifetime of a pod. RBD volumes support ownership management and SELinux relabeling.",
       "type": "object",
-      "required": [
-        "monitors",
-        "image"
-      ],
+      "required": ["monitors", "image"],
       "properties": {
         "fsType": {
           "description": "Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd",
@@ -11376,9 +11272,7 @@
     "io.k8s.api.core.v1.ResourceFieldSelector": {
       "description": "ResourceFieldSelector represents container resources (cpu, memory) and their output format",
       "type": "object",
-      "required": [
-        "resource"
-      ],
+      "required": ["resource"],
       "properties": {
         "containerName": {
           "description": "Container name: required for volumes, optional for env vars",
@@ -11439,11 +11333,7 @@
     "io.k8s.api.core.v1.ScaleIOVolumeSource": {
       "description": "ScaleIOVolumeSource represents a persistent ScaleIO volume",
       "type": "object",
-      "required": [
-        "gateway",
-        "system",
-        "secretRef"
-      ],
+      "required": ["gateway", "system", "secretRef"],
       "properties": {
         "fsType": {
           "description": "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Default is \"xfs\".",
@@ -11504,9 +11394,7 @@
     "io.k8s.api.core.v1.SecretKeySelector": {
       "description": "SecretKeySelector selects a key of a Secret.",
       "type": "object",
-      "required": [
-        "key"
-      ],
+      "required": ["key"],
       "properties": {
         "key": {
           "description": "The key of the secret to select from.  Must be a valid secret key.",
@@ -11617,9 +11505,7 @@
     "io.k8s.api.core.v1.ServiceAccountTokenProjection": {
       "description": "ServiceAccountTokenProjection represents a projected service account token volume. This projection can be used to insert a service account token into the pods runtime filesystem for use against APIs (Kubernetes API Server or otherwise).",
       "type": "object",
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "properties": {
         "audience": {
           "description": "Audience is the intended audience of the token. A recipient of a token must identify itself with an identifier specified in the audience of the token, and otherwise should reject the token. The audience defaults to the identifier of the apiserver.",
@@ -11638,9 +11524,7 @@
     "io.k8s.api.core.v1.ServicePort": {
       "description": "ServicePort contains information on service's port.",
       "type": "object",
-      "required": [
-        "port"
-      ],
+      "required": ["port"],
       "properties": {
         "name": {
           "description": "The name of this port within the service. This must be a DNS_LABEL. All ports within a ServiceSpec must have unique names. When considering the endpoints for a Service, this must match the 'name' field in the EndpointPort. Optional if only one ServicePort is defined on this service.",
@@ -11693,10 +11577,7 @@
     "io.k8s.api.core.v1.Sysctl": {
       "description": "Sysctl defines a kernel parameter to be set",
       "type": "object",
-      "required": [
-        "name",
-        "value"
-      ],
+      "required": ["name", "value"],
       "properties": {
         "name": {
           "description": "Name of a property to set",
@@ -11711,9 +11592,7 @@
     "io.k8s.api.core.v1.TCPSocketAction": {
       "description": "TCPSocketAction describes an action based on opening a socket",
       "type": "object",
-      "required": [
-        "port"
-      ],
+      "required": ["port"],
       "properties": {
         "host": {
           "description": "Optional: Host name to connect to, defaults to the pod IP.",
@@ -11754,10 +11633,7 @@
     "io.k8s.api.core.v1.TypedLocalObjectReference": {
       "description": "TypedLocalObjectReference contains enough information to let you locate the typed referenced object inside the same namespace.",
       "type": "object",
-      "required": [
-        "kind",
-        "name"
-      ],
+      "required": ["kind", "name"],
       "properties": {
         "apiGroup": {
           "description": "APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.",
@@ -11776,9 +11652,7 @@
     "io.k8s.api.core.v1.Volume": {
       "description": "Volume represents a named volume in a pod that may be accessed by any container in the pod.",
       "type": "object",
-      "required": [
-        "name"
-      ],
+      "required": ["name"],
       "properties": {
         "awsElasticBlockStore": {
           "description": "AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore",
@@ -11901,10 +11775,7 @@
     "io.k8s.api.core.v1.VolumeDevice": {
       "description": "volumeDevice describes a mapping of a raw block device within a container.",
       "type": "object",
-      "required": [
-        "name",
-        "devicePath"
-      ],
+      "required": ["name", "devicePath"],
       "properties": {
         "devicePath": {
           "description": "devicePath is the path inside of the container that the device will be mapped to.",
@@ -11919,10 +11790,7 @@
     "io.k8s.api.core.v1.VolumeMount": {
       "description": "VolumeMount describes a mounting of a Volume within a container.",
       "type": "object",
-      "required": [
-        "name",
-        "mountPath"
-      ],
+      "required": ["name", "mountPath"],
       "properties": {
         "mountPath": {
           "description": "Path within the container at which the volume should be mounted.  Must not contain ':'.",
@@ -11975,9 +11843,7 @@
     "io.k8s.api.core.v1.VsphereVirtualDiskVolumeSource": {
       "description": "Represents a vSphere volume resource.",
       "type": "object",
-      "required": [
-        "volumePath"
-      ],
+      "required": ["volumePath"],
       "properties": {
         "fsType": {
           "description": "Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. \"ext4\", \"xfs\", \"ntfs\". Implicitly inferred to be \"ext4\" if unspecified.",
@@ -12000,10 +11866,7 @@
     "io.k8s.api.core.v1.WeightedPodAffinityTerm": {
       "description": "The weights of all of the matched WeightedPodAffinityTerm fields are added per-node to find the most preferred node(s)",
       "type": "object",
-      "required": [
-        "weight",
-        "podAffinityTerm"
-      ],
+      "required": ["weight", "podAffinityTerm"],
       "properties": {
         "podAffinityTerm": {
           "description": "Required. A pod affinity term, associated with the corresponding weight.",
@@ -12115,10 +11978,7 @@
     "io.k8s.apimachinery.pkg.apis.meta.v1.LabelSelectorRequirement": {
       "description": "A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.",
       "type": "object",
-      "required": [
-        "key",
-        "operator"
-      ],
+      "required": ["key", "operator"],
       "properties": {
         "key": {
           "description": "key is the label key that the selector applies to.",
@@ -12287,12 +12147,7 @@
     "io.k8s.apimachinery.pkg.apis.meta.v1.OwnerReference": {
       "description": "OwnerReference contains enough information to let you identify an owning object. An owning object must be in the same namespace as the dependent, or be cluster-scoped, so there is no namespace field.",
       "type": "object",
-      "required": [
-        "apiVersion",
-        "kind",
-        "name",
-        "uid"
-      ],
+      "required": ["apiVersion", "kind", "name", "uid"],
       "properties": {
         "apiVersion": {
           "description": "API version of the referent.",
