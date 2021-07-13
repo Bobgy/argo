@@ -1184,32 +1184,6 @@ func (m *HDFSKrbConfig) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_HDFSKrbConfig proto.InternalMessageInfo
 
-func (m *HTTP) Reset()      { *m = HTTP{} }
-func (*HTTP) ProtoMessage() {}
-func (*HTTP) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{41}
-}
-func (m *HTTP) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *HTTP) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *HTTP) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_HTTP.Merge(m, src)
-}
-func (m *HTTP) XXX_Size() int {
-	return m.Size()
-}
-func (m *HTTP) XXX_DiscardUnknown() {
-	xxx_messageInfo_HTTP.DiscardUnknown(m)
-}
-
 var xxx_messageInfo_HTTP proto.InternalMessageInfo
 
 func (m *HTTPArtifact) Reset()      { *m = HTTPArtifact{} }
@@ -1239,62 +1213,6 @@ func (m *HTTPArtifact) XXX_DiscardUnknown() {
 }
 
 var xxx_messageInfo_HTTPArtifact proto.InternalMessageInfo
-
-func (m *HTTPHeader) Reset()      { *m = HTTPHeader{} }
-func (*HTTPHeader) ProtoMessage() {}
-func (*HTTPHeader) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{43}
-}
-func (m *HTTPHeader) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *HTTPHeader) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *HTTPHeader) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_HTTPHeader.Merge(m, src)
-}
-func (m *HTTPHeader) XXX_Size() int {
-	return m.Size()
-}
-func (m *HTTPHeader) XXX_DiscardUnknown() {
-	xxx_messageInfo_HTTPHeader.DiscardUnknown(m)
-}
-
-var xxx_messageInfo_HTTPHeader proto.InternalMessageInfo
-
-func (m *HTTPHeaderSource) Reset()      { *m = HTTPHeaderSource{} }
-func (*HTTPHeaderSource) ProtoMessage() {}
-func (*HTTPHeaderSource) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{44}
-}
-func (m *HTTPHeaderSource) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *HTTPHeaderSource) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *HTTPHeaderSource) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_HTTPHeaderSource.Merge(m, src)
-}
-func (m *HTTPHeaderSource) XXX_Size() int {
-	return m.Size()
-}
-func (m *HTTPHeaderSource) XXX_DiscardUnknown() {
-	xxx_messageInfo_HTTPHeaderSource.DiscardUnknown(m)
-}
-
-var xxx_messageInfo_HTTPHeaderSource proto.InternalMessageInfo
 
 func (m *Header) Reset()      { *m = Header{} }
 func (*Header) ProtoMessage() {}
@@ -1687,34 +1605,6 @@ func (m *MutexStatus) XXX_DiscardUnknown() {
 }
 
 var xxx_messageInfo_MutexStatus proto.InternalMessageInfo
-
-func (m *NodeResult) Reset()      { *m = NodeResult{} }
-func (*NodeResult) ProtoMessage() {}
-func (*NodeResult) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{59}
-}
-func (m *NodeResult) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *NodeResult) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *NodeResult) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_NodeResult.Merge(m, src)
-}
-func (m *NodeResult) XXX_Size() int {
-	return m.Size()
-}
-func (m *NodeResult) XXX_DiscardUnknown() {
-	xxx_messageInfo_NodeResult.DiscardUnknown(m)
-}
-
-var xxx_messageInfo_NodeResult proto.InternalMessageInfo
 
 func (m *NodeStatus) Reset()      { *m = NodeStatus{} }
 func (*NodeStatus) ProtoMessage() {}
@@ -2640,32 +2530,6 @@ func (m *TarStrategy) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_TarStrategy proto.InternalMessageInfo
 
-func (m *Task) Reset()      { *m = Task{} }
-func (*Task) ProtoMessage() {}
-func (*Task) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{93}
-}
-func (m *Task) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *Task) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *Task) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_Task.Merge(m, src)
-}
-func (m *Task) XXX_Size() int {
-	return m.Size()
-}
-func (m *Task) XXX_DiscardUnknown() {
-	xxx_messageInfo_Task.DiscardUnknown(m)
-}
-
 var xxx_messageInfo_Task proto.InternalMessageInfo
 
 func (m *Template) Reset()      { *m = Template{} }
@@ -3088,11 +2952,6 @@ func (m *WorkflowStep) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_WorkflowStep proto.InternalMessageInfo
 
-func (m *WorkflowTaskSet) Reset()      { *m = WorkflowTaskSet{} }
-func (*WorkflowTaskSet) ProtoMessage() {}
-func (*WorkflowTaskSet) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{109}
-}
 func (m *WorkflowTemplate) XXX_Unmarshal(b []byte) error {
 	return m.Unmarshal(b)
 }
@@ -3116,11 +2975,6 @@ func (m *WorkflowTemplate) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_WorkflowTemplate proto.InternalMessageInfo
 
-func (m *WorkflowTaskSetList) Reset()      { *m = WorkflowTaskSetList{} }
-func (*WorkflowTaskSetList) ProtoMessage() {}
-func (*WorkflowTaskSetList) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{110}
-}
 func (m *WorkflowTemplateList) XXX_Unmarshal(b []byte) error {
 	return m.Unmarshal(b)
 }
@@ -3144,11 +2998,6 @@ func (m *WorkflowTemplateList) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_WorkflowTemplateList proto.InternalMessageInfo
 
-func (m *WorkflowTaskSetSpec) Reset()      { *m = WorkflowTaskSetSpec{} }
-func (*WorkflowTaskSetSpec) ProtoMessage() {}
-func (*WorkflowTaskSetSpec) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{111}
-}
 func (m *WorkflowTemplateRef) XXX_Unmarshal(b []byte) error {
 	return m.Unmarshal(b)
 }
@@ -3172,11 +3021,6 @@ func (m *WorkflowTemplateRef) XXX_DiscardUnknown() {
 
 var xxx_messageInfo_WorkflowTemplateRef proto.InternalMessageInfo
 
-func (m *WorkflowTaskSetStatus) Reset()      { *m = WorkflowTaskSetStatus{} }
-func (*WorkflowTaskSetStatus) ProtoMessage() {}
-func (*WorkflowTaskSetStatus) Descriptor() ([]byte, []int) {
-	return fileDescriptor_724696e352c3df5f, []int{112}
-}
 func (m *WorkflowTemplateSpec) XXX_Unmarshal(b []byte) error {
 	return m.Unmarshal(b)
 }
@@ -3205,109 +3049,22 @@ func (*WorkflowTemplate) ProtoMessage() {}
 func (*WorkflowTemplate) Descriptor() ([]byte, []int) {
 	return fileDescriptor_724696e352c3df5f, []int{113}
 }
-func (m *WorkflowTemplate) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *WorkflowTemplate) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *WorkflowTemplate) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_WorkflowTemplate.Merge(m, src)
-}
-func (m *WorkflowTemplate) XXX_Size() int {
-	return m.Size()
-}
-func (m *WorkflowTemplate) XXX_DiscardUnknown() {
-	xxx_messageInfo_WorkflowTemplate.DiscardUnknown(m)
-}
-
-var xxx_messageInfo_WorkflowTemplate proto.InternalMessageInfo
-
 func (m *WorkflowTemplateList) Reset()      { *m = WorkflowTemplateList{} }
 func (*WorkflowTemplateList) ProtoMessage() {}
 func (*WorkflowTemplateList) Descriptor() ([]byte, []int) {
 	return fileDescriptor_724696e352c3df5f, []int{114}
 }
-func (m *WorkflowTemplateList) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *WorkflowTemplateList) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *WorkflowTemplateList) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_WorkflowTemplateList.Merge(m, src)
-}
-func (m *WorkflowTemplateList) XXX_Size() int {
-	return m.Size()
-}
-func (m *WorkflowTemplateList) XXX_DiscardUnknown() {
-	xxx_messageInfo_WorkflowTemplateList.DiscardUnknown(m)
-}
-
-var xxx_messageInfo_WorkflowTemplateList proto.InternalMessageInfo
 
 func (m *WorkflowTemplateRef) Reset()      { *m = WorkflowTemplateRef{} }
 func (*WorkflowTemplateRef) ProtoMessage() {}
 func (*WorkflowTemplateRef) Descriptor() ([]byte, []int) {
 	return fileDescriptor_724696e352c3df5f, []int{115}
 }
-func (m *WorkflowTemplateRef) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *WorkflowTemplateRef) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *WorkflowTemplateRef) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_WorkflowTemplateRef.Merge(m, src)
-}
-func (m *WorkflowTemplateRef) XXX_Size() int {
-	return m.Size()
-}
-func (m *WorkflowTemplateRef) XXX_DiscardUnknown() {
-	xxx_messageInfo_WorkflowTemplateRef.DiscardUnknown(m)
-}
-
-var xxx_messageInfo_WorkflowTemplateRef proto.InternalMessageInfo
 
 func (m *WorkflowTemplateSpec) Reset()      { *m = WorkflowTemplateSpec{} }
 func (*WorkflowTemplateSpec) ProtoMessage() {}
 func (*WorkflowTemplateSpec) Descriptor() ([]byte, []int) {
 	return fileDescriptor_724696e352c3df5f, []int{116}
-}
-func (m *WorkflowTemplateSpec) XXX_Unmarshal(b []byte) error {
-	return m.Unmarshal(b)
-}
-func (m *WorkflowTemplateSpec) XXX_Marshal(b []byte, deterministic bool) ([]byte, error) {
-	b = b[:cap(b)]
-	n, err := m.MarshalToSizedBuffer(b)
-	if err != nil {
-		return nil, err
-	}
-	return b[:n], nil
-}
-func (m *WorkflowTemplateSpec) XXX_Merge(src proto.Message) {
-	xxx_messageInfo_WorkflowTemplateSpec.Merge(m, src)
-}
-func (m *WorkflowTemplateSpec) XXX_Size() int {
-	return m.Size()
-}
-func (m *WorkflowTemplateSpec) XXX_DiscardUnknown() {
-	xxx_messageInfo_WorkflowTemplateSpec.DiscardUnknown(m)
 }
 
 var xxx_messageInfo_WorkflowTemplateSpec proto.InternalMessageInfo
