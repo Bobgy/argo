@@ -609,3 +609,38 @@ parse-examples:
 .PHONY: checksums
 checksums:
 	for f in ./dist/argo-*.gz; do openssl dgst -sha256 "$$f" | awk ' { print $$2 }' > "$$f".sha256 ; done
+
+.PHONY: dev
+dev: argoexec-image workflow-controller-image dev-push dev-run
+
+.PHONY: dev-push
+dev-push:
+	docker tag argoproj/workflow-controller:latest gcr.io/gongyuan-dev/dev/workflow-controller:latest
+	docker push gcr.io/gongyuan-dev/dev/workflow-controller:latest
+	kubectl rollout restart deploy/workflow-controller
+	docker tag argoproj/argoexec:latest gcr.io/gongyuan-dev/dev/argoexec:latest
+	docker push gcr.io/gongyuan-dev/dev/argoexec:latest
+
+.PHONY: dev-run
+dev-run:
+	kubectl create -f dev.yaml
+
+FORK_TAG?=v3.1.2-patch
+.PHONY: dev-tag
+dev-tag:
+	git tag $(FORK_TAG)
+	git push origin $(FORK_TAG)
+
+ARGOEXEC_IMAGE?=gcr.io/ml-pipeline-test/argoexec:$(FORK_TAG)
+WORKFLOW_CONTROLLER_IMAGE?=gcr.io/ml-pipeline-test/workflow-controller:$(FORK_TAG)
+.PHONY: dev-release
+dev-release: dev-tag argoexec-image workflow-controller-image
+	docker tag argoproj/argoexec:latest $(ARGOEXEC_IMAGE)
+	docker tag argoproj/workflow-controller:latest $(WORKFLOW_CONTROLLER_IMAGE)
+	docker push $(ARGOEXEC_IMAGE)
+	docker push $(WORKFLOW_CONTROLLER_IMAGE)
+
+.PHONY: dev-tag-delete
+dev-tag-delete:
+	git tag -d $(FORK_TAG)
+	git push origin --delete $(FORK_TAG)
