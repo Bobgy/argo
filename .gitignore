@@ -39,3 +39,6 @@ git-ask-pass.sh
 /go-diagrams/
 /.run/
 pprof
+
+# develop workflow
+dev.yaml
