@@ -43,10 +43,12 @@ func NewEmissaryCommand() *cobra.Command {
 				if err != nil {
 					logger.Error(fmt.Errorf("failed to write exit code: %w", err))
 				}
+				logger.Info("finished")
 			}()
 
 			// this also indicates we've started
-			if err := os.MkdirAll(varRunArgo+"/ctr/"+containerName, 0o755); err != nil {
+			// Dir permission set to rwxrwxrwx, so that wait container can write kill signal to the folder.
+			if err := os.MkdirAll(varRunArgo+"/ctr/"+containerName, 0o777); err != nil {
 				return fmt.Errorf("failed to create ctr directory: %w", err)
 			}
 
@@ -101,6 +103,7 @@ func NewEmissaryCommand() *cobra.Command {
 				return fmt.Errorf("failed to find name in PATH: %w", err)
 			}
 
+			logger.Info("before running user command")
 			command := exec.Command(name, args...)
 			command.Env = os.Environ()
 			command.SysProcAttr = &syscall.SysProcAttr{}
@@ -127,6 +130,7 @@ func NewEmissaryCommand() *cobra.Command {
 			}
 
 			if err := command.Start(); err != nil {
+				logger.Error("user command start error", err)
 				return err
 			}
 
@@ -142,7 +146,9 @@ func NewEmissaryCommand() *cobra.Command {
 				}
 			}()
 
+			logger.Info("waiting for user command")
 			cmdErr := command.Wait()
+			logger.Error("user command finished", cmdErr)
 
 			if cmdErr == nil {
 				exitCode = 0
@@ -155,6 +161,7 @@ func NewEmissaryCommand() *cobra.Command {
 			}
 
 			if containerName == common.MainContainerName {
+				logger.Info("saving outputs")
 				for _, x := range template.Outputs.Parameters {
 					if x.ValueFrom != nil && x.ValueFrom.Path != "" {
 						if err := saveParameter(x.ValueFrom.Path); err != nil {
@@ -173,6 +180,7 @@ func NewEmissaryCommand() *cobra.Command {
 				logger.Info("not saving outputs - not main container")
 			}
 
+			logger.Info("exiting")
 			return cmdErr // this is the error returned from cmd.Wait(), which maybe an exitError
 		},
 	}

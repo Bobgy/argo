@@ -625,7 +625,7 @@ dev-push:
 dev-run:
 	kubectl create -f dev.yaml
 
-FORK_TAG?=v3.1.2-patch
+FORK_TAG?=v3.1.2-patch.0
 .PHONY: dev-tag
 dev-tag:
 	git tag $(FORK_TAG)
