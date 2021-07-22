@@ -1,0 +1,26 @@
+#### sidecar example ####
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: nonroot-sidecar-
+spec:
+  serviceAccountName: pipeline-runner
+  entrypoint: sidecar-example
+  templates:
+  - name: sidecar-example
+    container:
+      image: alpine:latest
+      command: [sh, -c]
+      args: ["
+        apk update &&
+        apk add curl &&
+        until curl 'http://127.0.0.1:8080'; do sleep 5; done
+      "]
+    sidecars:
+    - name: http-echo
+      image: mendhak/http-https-echo:19
+      command: ['docker-entrypoint.sh']
+      args: ['node', './index.js']
+      envs:
+      - name: HTTP_PORT
+        value: 8080
