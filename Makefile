@@ -611,7 +611,7 @@ checksums:
 	for f in ./dist/argo-*.gz; do openssl dgst -sha256 "$$f" | awk ' { print $$2 }' > "$$f".sha256 ; done
 
 .PHONY: dev
-dev: dev-clean argoexec-image workflow-controller-image dev-push dev-run
+dev: dev-clean argoexec-image workflow-controller-image dev-push dev-all
 
 .PHONY: dev-clean
 dev-clean:
@@ -625,13 +625,17 @@ dev-push:
 	docker tag argoproj/argoexec:latest gcr.io/gongyuan-dev/dev/argoexec:latest
 	docker push gcr.io/gongyuan-dev/dev/argoexec:latest
 
-.PHONY: dev-run
-dev-run:
-	@name="$$(kubectl create -f dev.yaml -o name | cut -d / -f 2)" \
+.PHONY: dev-all
+dev-all: dev-nonroot-helloworld dev-nonroot-parameter dev-nonroot-artifact dev-nonroot-sidecar
+# the following examples still fails, so ignore them for now:
+# * bg-process
+# * no-term-sidecar
+
+dev-%: FORCE
+	@name="$$(kubectl create -f examples/dev/$*.yaml -o name | cut -d / -f 2)" \
 		&& echo "workflow $${name} created" \
 		&& argo logs "$${name}" -f \
 		&& argo get "$${name}"
-
 
 FORK_TAG?=v3.1.2-patch
 .PHONY: dev-tag
@@ -652,3 +656,5 @@ dev-release: dev-tag argoexec-image workflow-controller-image
 dev-tag-delete:
 	git tag -d $(FORK_TAG)
 	git push origin --delete $(FORK_TAG)
+
+FORCE: ;
