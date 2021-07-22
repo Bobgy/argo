@@ -1,0 +1,19 @@
+#### background process example ####
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: bg-process-
+spec:
+  serviceAccountName: pipeline-runner
+  entrypoint: bg
+  templates:
+  - name: bg
+    container:
+      image: alpine
+      command:
+      - sh
+      - -c
+      - |
+        set -ex
+        (sleep 100 && echo "wake up") &
+        echo "exit"

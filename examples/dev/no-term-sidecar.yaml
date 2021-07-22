@@ -1,0 +1,27 @@
+#### sidecar example - bad sidecar that doesn't receive TERM ####
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: no-term-sidecar-
+spec:
+  serviceAccountName: pipeline-runner
+  entrypoint: sidecar-example
+  templates:
+  - name: sidecar-example
+    container:
+      image: alpine:latest
+      command: [sh, -c]
+      args: ["
+        apk update &&
+        apk add curl &&
+        until curl -XPOST 'http://127.0.0.1:5678'; do sleep .5; done &&
+        for i in $(seq 1 20); 
+          do curl -XPOST 'http://127.0.0.1:5678';
+          sleep .5 ; 
+        done
+      "]
+    sidecars:
+    - name: http-echo
+      image: hashicorp/http-echo
+      command: ['/http-echo']
+      args: ['-text="hello world"']

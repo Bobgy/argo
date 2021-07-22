@@ -1,0 +1,13 @@
+#### one step test workflow for non-root ####
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: nonroot-helloworld-
+spec:
+  serviceAccountName: pipeline-runner
+  entrypoint: hw
+  templates:
+  - name: hw
+    container:
+      image: curlimages/curl:latest
+      command: [sh, -c, "echo hello"]
