@@ -14,7 +14,7 @@ spec:
       args: ["
         apk update &&
         apk add curl &&
-        until curl 'http://127.0.0.1:8080'; do sleep 5; done &&
+        until curl 'http://127.0.0.1:8080'; do sleep 5; done
       "]
     sidecars:
     - name: http-echo
