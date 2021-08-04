@@ -637,7 +637,7 @@ dev-%: FORCE
 		&& argo logs "$${name}" -f \
 		&& argo get "$${name}"
 
-FORK_TAG?=v3.1.2-patch.2
+FORK_TAG?=v3.1.5-patch
 .PHONY: dev-tag
 dev-tag:
 	git tag $(FORK_TAG)
