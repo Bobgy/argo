@@ -637,7 +637,7 @@ dev-%: FORCE
 		&& argo logs "$${name}" -f \
 		&& argo get "$${name}"
 
-FORK_TAG?=v3.1.5-patch
+FORK_TAG?=v3.1.6-patch
 .PHONY: dev-tag
 dev-tag:
 	git tag $(FORK_TAG)
@@ -649,8 +649,8 @@ WORKFLOW_CONTROLLER_IMAGE?=gcr.io/ml-pipeline-test/workflow-controller:$(FORK_TA
 dev-release: dev-tag
 	$(MAKE) argoexec-image
 	$(MAKE) workflow-controller-image
-	docker tag argoproj/argoexec:latest $(ARGOEXEC_IMAGE)
-	docker tag argoproj/workflow-controller:latest $(WORKFLOW_CONTROLLER_IMAGE)
+	docker tag argoproj/argoexec:$(FORK_TAG) $(ARGOEXEC_IMAGE)
+	docker tag argoproj/workflow-controller:$(FORK_TAG) $(WORKFLOW_CONTROLLER_IMAGE)
 	docker push $(ARGOEXEC_IMAGE)
 	docker push $(WORKFLOW_CONTROLLER_IMAGE)
 
